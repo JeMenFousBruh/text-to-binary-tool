@@ -1,0 +1,75 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #00FF00;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #00FF00;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+input, textarea {
+    background-color: #111;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input:focus, textarea:focus {
+    border-color: #00CC00; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+textarea {
+    height: 100px;
+    overflow-y: auto;
+    resize: vertical; /* Allows vertical resizing */
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #333;
+    color: #00FF00;
+    border: 2px solid #00FF00;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.3s, transform 0.1s; /* Smooth transition for background */
+}
+
+button:hover {
+    background-color: #444;
+    transform: scale(1.05); /* Slightly scale button on hover */
+}
+
+.output-box {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: #00FF00;
+    background-color: #111;    
+    padding: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 100%;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+#saltOutput {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #FF0000;
+}
