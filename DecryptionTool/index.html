@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary to Text Decryption</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking shared CSS -->
+    <script src="decryption.js" defer></script>
+</head>
+<body>
+    <h1>Binary to Text Decryption Tool</h1>
+
+    <label for="binaryInput">Enter Encrypted Binary Message:</label><br>
+    <textarea id="binaryInput" rows="6" cols="60"></textarea><br><br>
+    
+    <label for="keyInput">Enter Key:</label>
+    <input type="number" id="keyInput"><br><br>
+
+    <label for="saltInput">Enter Salt:</label>
+    <input type="number" id="saltInput"><br><br>
+
+    <button onclick="decryptBinary()">Decrypt</button><br><br>    
+
+    <h3>Decrypted Text:</h3>
+    <div class="output-box" id="outputBox"></div><br>
+
+    <button onclick="copyToClipboard()">Copy</button><br><br>
+</body>
+</html>
