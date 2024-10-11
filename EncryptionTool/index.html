@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Binary Encryption</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking shared CSS -->
+    <script src="encryption.js" defer></script>
+</head>
+<body>
+    <h1>Text to Binary Encryption</h1>
+
+    <label for="plaintext">Enter Text:</label><br>
+    <textarea id="plaintext" rows="6" cols="60" placeholder="Type your message here..."></textarea><br><br>
+    
+    <label for="key">Enter Key:</label>
+    <input type="number" id="key" value=""><br><br>
+
+    <button onclick="encryptText()">Encrypt</button><br><br>
+    
+    <h3>Encrypted Binary Message:</h3>
+    <div class="output-box" id="binaryOutput"></div><br>
+
+    <button onclick="copyToClipboard()">Copy</button><br><br>
+
+    <div id="saltOutput"></div>
+</body>
+</html>
